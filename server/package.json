@@ -1,0 +1,43 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "db:sync": "node src/config/syncDB.js",
+        "seed:library": "node src/scripts/seedFullLibraryData.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@google/genai": "^0.12.0",
+        "@google/generative-ai": "^0.24.1",
+        "axios": "^1.9.0",
+        "bcrypt": "^5.1.1",
+        "body-parser": "^2.2.0",
+        "cloudinary": "^2.7.0",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.2.0",
+        "dayjs": "^1.11.23",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "googleapis": "^148.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "jwt-decode": "^4.0.0",
+        "multer": "^1.4.5-lts.2",
+        "mysql2": "^3.24.2",
+        "nodemailer": "^7.0.2",
+        "nodemon": "^3.1.10",
+        "otp-generator": "^4.0.1",
+        "pg": "^8.23.0",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.37.8",
+        "socket.io": "^4.8.3",
+        "uuid": "^11.1.0",
+        "vnpay": "^2.5.0"
+    }
+}

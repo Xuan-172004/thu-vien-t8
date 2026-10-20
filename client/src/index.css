@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #faf9f6;
+    color: #1c1917;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* Glassmorphism & Visual Surface Classes */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-dark {
+  background: rgba(28, 25, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.card-hover-effect {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08), 0 4px 8px -4px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth Glow Gradients */
+.bg-gradient-amber {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a 100%);
+}
+
+.bg-gradient-warm-dark {
+  background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #1c1917 100%);
+}
+
+.bg-warm-hero {
+  background: radial-gradient(circle at 50% 0%, #fff7ed 0%, #fafaf9 100%);
+}
+
+/* Ant Design Global Polish Overrides */
+.ant-btn-primary {
+  box-shadow: 0 4px 14px 0 rgba(217, 119, 6, 0.35) !important;
+}
+
+.ant-btn-primary:hover {
+  box-shadow: 0 6px 20px 0 rgba(217, 119, 6, 0.45) !important;
+}
+
+.ant-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ant-modal-content {
+  border-radius: 24px !important;
+  padding: 24px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.ant-table-wrapper .ant-table {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafaf9 !important;
+  color: #44403c !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.ant-tag {
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
