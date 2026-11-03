@@ -336,9 +336,10 @@ export function BookDetailPage() {
             <BookOpen className="w-5 h-5 text-amber-600" />
             <span>Giới Thiệu & Tóm Tắt Nội Dung</span>
           </h3>
-          <div className="text-xs md:text-sm leading-relaxed text-stone-700 space-y-2 font-normal">
-            <p>{book.description}</p>
-          </div>
+          <div
+              className="prose prose-sm max-w-none text-xs md:text-sm leading-relaxed text-stone-700 book-summary"
+              dangerouslySetInnerHTML={{ __html: book.description || '' }}
+              />
         </div>
 
         {/* Section: Related Books */}

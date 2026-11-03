@@ -27,8 +27,8 @@ const seedData = async () => {
         // 2. Seed Admin & User accounts
         const passwordHash = bcrypt.hashSync('123456', 10);
         await User.create({
-            fullName: 'Phạm Văn Luân',
-            email: 'luan.pv@student.edu.vn',
+            fullName: 'ADMIN',
+            email: 'admin@gmail.com',
             password: passwordHash,
             role: 'superadmin',
             isAdmin: true,

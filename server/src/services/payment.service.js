@@ -117,8 +117,8 @@ class PaymentService {
         } else {
             // VNPay Sandbox
             const vnpay = new VNPay({
-                tmnCode: 'DH2F13SW',
-                secureSecret: '7VJPG70RGPOWFO47VSBT29WPDYND0EJG',
+                tmnCode: 'DXW7ZGZ8',
+                secureSecret: 'EXZCBTNMVTCTHXQJIRMFPVKHHTYTSSPY',
                 vnpayHost: 'https://sandbox.vnpayment.vn',
                 testMode: true,
                 hashAlgorithm: 'SHA512',

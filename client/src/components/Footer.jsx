@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-stone-400 font-medium">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-amber-500 shrink-0" />
-                <Link to="/schedule" className="text-amber-300 font-bold hover:underline">Lịch phục vụ: 07:30 - 21:00 (24/7 Tầng 1)</Link>
+                <Link to="/schedule" className="text-amber-300 font-bold hover:underline">Lịch phục vụ: 07:30 - 21:00 (24/7 Tầng 7)</Link>
               </div>
               <p>
                 <Link to="/rules" className="hover:text-amber-400 transition-colors">Quy định mượn/trả sách & Cấp thẻ thư viện</Link>
@@ -72,7 +72,7 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-stone-400 font-medium">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-amber-500 shrink-0" />
-                <span>Số 1, Đường Đại Học, Khu Công Nghệ Cao, TP. HCM</span>
+                <span>Tầng 7,Tòa nhà A8,Trường Đại học Giao Thông Vận Tải</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
@@ -80,7 +80,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                <span>Email: hotro@thuesach247.vn</span>
+                <span>Email: hxuan1710@gmail.com</span>
               </div>
             </div>
           </div>

@@ -250,12 +250,7 @@ export function CartPage() {
 
                     <div className="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto border-t sm:border-t-0 border-stone-200 pt-2 sm:pt-0 shrink-0 gap-1">
                       <div className="text-right text-xs">
-                        <div className="text-stone-500 font-medium">
-                          Cọc hoàn lại: <strong className="text-stone-900 font-bold">{getBookDeposit(book).toLocaleString()} đ</strong>
-                        </div>
-                        <div className="text-amber-800 font-medium mt-0.5">
-                          Phí mượn ({borrowDays} ngày): <strong className="text-amber-600 font-extrabold">{getBookRentalFee(book, borrowDays).toLocaleString()} đ</strong>
-                        </div>
+                        
                       </div>
                       <button
                         type="button"
